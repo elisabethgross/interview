@@ -22,7 +22,7 @@ function TodoItem({ todoData, handleChange }) {
     fetch(`${url}${id}`, {
       method: 'PATCH',
       headers: {
-        // "X-Api-Key": "PMAK-5ef63db179d23c004de50751-10300736bc550d2a891dc4355aab8d7a5c"
+        // "X-Api-Key": "KEY"
       },
       body: JSON.stringify({
         isComplete: action,
