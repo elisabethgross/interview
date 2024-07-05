@@ -1,0 +1,64 @@
+.header {
+  background: #515777;
+  color: white;
+}
+
+.app-header {
+  margin: 0;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.todo-item {
+  display: flex;
+  background: rgb(200, 186, 186);
+  width: 33%;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-item {
+    width: 95%;
+  }
+}
+
+.todo-item p {
+  margin: 0px;
+}
+
+.todo-due-date {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.is-complete {
+  background: rgb(129, 228, 129);
+}
+
+.is-complete .todo-description {
+  text-decoration: line-through;
+}
+
+.is-overdue {
+  background: rgb(248, 134, 134)
+}
+
+.checkbox {
+  margin-right: 10px;
+  accent-color: transparent;
+}
+
+.first-half-todo {
+  display: flex;
+}
